@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #65acb8;
+    --color-2: #25D366;
+    --color-3: #253452;
+    --color-4: #6F747E;
+    --color-5: #2A70ED;
+    --color-6: #65ACB8;
+    --color-7: #ffffff;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    overflow: hidden;
+    margin: auto;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.primero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+.text__logo {
+    font-size: 13px;
+    font-weight: 300;
+    color: #3D5458;
+}
+
+.segundo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #202020;
+    font-weight: 500;
+    transition: 0.4s ease-in-out all;
+}
+
+.menu li a:hover {
+    color: var(--color-1);
+}
+
+.menu .active {
+    color: var(--color-1);
+}
+
+.boton__logo {
+    background-color: var(--color-2);
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out all;
+    cursor: pointer;
+}
+
+.boton__logo:hover {
+    background-color: #108e3ebb;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.what {
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+.icono {
+    background-color: #3f7e8a;
+    color: #fff;
+    margin: 0 3px;
+    border-radius: 3px;
+    font-size: 22px;
+    padding: 8px 12px;
+}
+
+.banner__2 {
+    background-image: url("./img/banner__2.jpg");
+    background-position: 0% 40%;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.banner__2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(101, 172, 184, 0.5), #36b7d1);
+}
+
+.text__banner__2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    font-size: 40px;
+    color: var(--color-7);
+}
+
+.historia {
+    background-color: #ffffff;
+    display: flex;
+    margin-bottom: 160px;
+}
+
+.historia h2 {
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--color-3);
+}
+
+.historia h3 {
+    margin-top: 20px;
+    font-size: 19px;
+    color: var(--color-4);
+}
+
+.historia p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color-4);
+}
+
+.text__historia {
+    width: 40%;
+}
+
+.img__historia {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    margin-bottom: 30px;
+}
+
+.footer__display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.links {
+    margin-bottom: 35px;
+}
+
+.links h2 {
+    color: var(--color-3);
+    margin-bottom: 12px;
+}
+
+.links ul li {
+    color: var(--color-4);
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.contactanos h2 {
+    color: var(--color-3);
+    margin-bottom: 12px;
+}
+
+.contactanos ul li {
+    list-style: none;
+    color: var(--color-4);
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.icono__contactanos {
+    color: var(--color-6);
+    margin-right: 10px;
+}
+
+.agenden h2 {
+    color: var(--color-3);
+    margin-bottom: 12px;
+}
+
+.agenden p {
+    color: var(--color-4);
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.podoplus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text__last {
+    font-size: 15px;
+    color: var(--color-4);
+    font-weight: 500;
+}
